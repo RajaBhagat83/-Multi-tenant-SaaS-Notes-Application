@@ -1,4 +1,4 @@
-import Tenant from "../models/tenant.js"
+import Tenant from "../../server/models/tenant.js"
 
 export const upgradeTenant = async (req,res) => {
   try{

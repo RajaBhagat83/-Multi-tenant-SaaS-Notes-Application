@@ -1,5 +1,5 @@
-import Note from "../models/Notes.js";
-import Tenant from "../models/tenant.js";
+import Note from "../../server/models/Notes.js";
+import Tenant from "../../server/models/tenant.js";
 
 //Create a note
 export const createNote = async (req, res) => {

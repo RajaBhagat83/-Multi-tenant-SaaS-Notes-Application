@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import bcrypt from "bcryptjs";
-import connectDb from "./connection.js";
-import Tenant from "../models/tenant.js"
-import User from "../models/user.js"
+import connectDb from "../../server/db/connection.js";
+import Tenant from "../../server/models/tenant.js"
+import User from "../../server/models/user.js"
 
 dotenv.config();
 connectDb();
