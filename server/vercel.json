@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://RajaBhagat:1Locobgmi@cluster0.ebmadlj.mongodb.net/Companies",
+    "JWT_SECRET": "Secret"
+  }
+}
