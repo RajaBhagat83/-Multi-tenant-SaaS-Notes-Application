@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
-console.log("API URL:", API_URL);
+const API_URL = "/api/proxy" || "http://localhost:8000";  // Vercel proxy handles HTTPS → HTTP
+console.log("API URL:", API_URL); 
 
 export default function Notes({ token, user, onLogout }) {
   const [notes, setNotes] = useState([]);

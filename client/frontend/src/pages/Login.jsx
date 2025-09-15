@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import loginPage from "../assets/loginPage.png";
 import axios from "axios";
 
-const API_URL = "/api/proxy";
+const API_URL = "/api/proxy" ||"http://localhost:8000";
 
 function Login({ setToken }) {
   const [email, setEmail] = useState(null);
