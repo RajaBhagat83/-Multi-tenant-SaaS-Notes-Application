@@ -14,6 +14,11 @@ connectDb();
 app.use(express.json());
 app.use(cors());
 
+app.use(cors({
+  origin: "https://multi-tenant-saa-s-notes-applicatio-fawn.vercel.app/",
+  credentials: true
+}));
+
 
 //Health Check 
 app.get("/health",(req,res) => res.json({status :"ok"}));
