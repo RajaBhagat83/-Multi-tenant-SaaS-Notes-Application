@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import loginPage from "../assets/loginPage.png";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function Login({ setToken }) {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
-
+  
   const bgImage = {
     backgroundImage: `url(${loginPage})`,
     backgroundPosition: "center",
@@ -16,7 +18,7 @@ function Login({ setToken }) {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/auth/login", {
+      const response = await axios.post(`${API_URL}/auth/login`, {
         email: email,
         password: password,
       });
