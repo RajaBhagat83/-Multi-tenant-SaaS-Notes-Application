@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import loginPage from "../assets/loginPage.png";
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "/api/proxy";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 function Login({ setToken }) {
   const [email, setEmail] = useState(null);
