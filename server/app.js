@@ -23,7 +23,7 @@ app.use("/auth",authRoutes);
 app.use("/notes",noteRouter);
 app.use("/tenants",tenantRoutes);
 
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT || 8000 ;
 app.listen(PORT, () => {
   console.log(`Server running on port http://localhost:${PORT}`);
 })
