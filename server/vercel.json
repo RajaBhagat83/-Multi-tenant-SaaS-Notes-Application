@@ -7,10 +7,7 @@
     "MONGO_URI": "mongodb+srv://RajaBhagat:1Locobgmi@cluster0.ebmadlj.mongodb.net/Companies",
     "JWT_SECRET": "Secret"
   },
-"rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
